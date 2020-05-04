@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+body{
+    width: 100%;
+    display: -webkit-flex;
+    display: flexbox;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../images/markus-spiske-qjnAnF0jIGk-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+main{
+    width: 80%;
+    background-color: white;
+}
+a{
+    color: orangered;
+    text-decoration: none;
+    font-weight: bold;
+}
+.clic{
+    cursor: pointer;
+}
