@@ -214,6 +214,27 @@ section .txt:nth-child(1) p{
 .lst-dot{
     background: #ffd42d;
 }
+.skills{
+    margin-bottom: 60px;
+}
+.skills h3{
+    font-size: 16px;
+    text-align: center;
+}
+.stars{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #ffd42d;
+}
+.txt .skills:nth-last-of-type(1){
+    margin-bottom: 20px;
+}
+.stars i{
+    margin: 0 5px;
+}
 
 /*-------------------------------RESPONSIVE--------------------------------------*/
 @media screen and (max-width: 852px){
@@ -278,6 +299,14 @@ section .txt:nth-child(1) p{
     }
     .exp-info ul:nth-child(2){
         padding-right: 0;
+    }
+}
+@media screen and (max-width: 425px){
+    .skills h3{
+        text-align: left;
+    }
+    .stars{
+        justify-content: flex-start;
     }
 }
 @media screen and (max-width: 404px){
