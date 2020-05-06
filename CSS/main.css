@@ -215,7 +215,7 @@ section .txt:nth-child(1) p{
     background: #ffd42d;
 }
 .skills{
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 .skills h3{
     font-size: 16px;
@@ -234,6 +234,33 @@ section .txt:nth-child(1) p{
 }
 .stars i{
     margin: 0 5px;
+}
+.contact-cont{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-box{
+    width: 280px;
+    min-width: 200px;
+    padding: 30px 20px;
+    margin: 20px;
+    border: 1px solid #999999;
+    text-align: center;
+}
+.contact-box i{
+    width: 100%;
+    font-size: 40px;
+    margin: 15px 0;
+}
+.contact-box p{
+    padding: 0;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
 }
 
 /*-------------------------------RESPONSIVE--------------------------------------*/
@@ -302,11 +329,18 @@ section .txt:nth-child(1) p{
     }
 }
 @media screen and (max-width: 425px){
+    .skills{
+        margin-bottom: 60px;
+    }
     .skills h3{
         text-align: left;
     }
     .stars{
         justify-content: flex-start;
+    }
+    .contact-box{
+        max-width: 180px;
+        margin: 20px 0;
     }
 }
 @media screen and (max-width: 404px){
