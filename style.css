@@ -50,9 +50,6 @@ body {
   animation-delay: 1.25s;
   animation-name: envelope-back-before;
 }
-.envelope.active .bottom-wrapper {
-  transform: rotateX(180deg);
-}
 .envelope.active .bottom-wrapper:after {
   z-index: 0;
   opacity: 1;
@@ -165,7 +162,7 @@ body {
   display: block;
   background-color: #d3d3d3;
   width: 30em;
-  height: 20em;
+  height: 24em;
 }
 .envelope .paper.front {
   top: 10em;
@@ -185,7 +182,7 @@ body {
   content: '';
   display: block;
   width: 30em;
-  height: 12em;
+  height: 14em;
   background: orange;
   margin-top: -1px;
 }
