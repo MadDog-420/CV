@@ -6,10 +6,10 @@
     <title>Hola mundo!</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/main2.css'>
+    <link rel="stylesheet" href="./style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript" src="JS/main3.js"></script>
 </head>
 <body>
     <main style="margin: 40px 0;padding: 30px;">
@@ -83,34 +83,51 @@
             </tr>
         </table>
         <!-- Shift + Alt + A -->
-        <form action="http://utp.edu.pe/" method="POST"> 
-            <ul>
-                <li>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                    <label for="mail">Correo electrónico:</label>
-                    <input type="email" id="mail" name="user_mail">
-                </li>
-                <li>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="user_pass">
-                </li>
-                <li>
-                    <label for="msg">Mensaje:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </li>
-            </ul>
-            <li class="button">
-                <button type="submit">Envíe su mensaje</button>
-            </li>
-            <!-- radio -->
-            <input type="radio" name="gender" value="male">Masculino <br>
-            <input type="radio" name="gender" value="female">Femenino <br>
-            <!-- check -->
-            <input type="checkbox">
-        </form>
+        <div id="container">
+        <script id="template">
+            <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reiniciar' : 'Animar' }}</div>
+            <div class="contact-wrapper">
+                <div class="envelope {{ flipCard ? 'active' : '' }}">
+                <div class="back paper"></div>
+                <div class="content">
+                    <div class="form-wrapper">
+                    <form>
+                        <div class="top-wrapper">
+                        <div class="input">
+                            <label>Nombre</label>
+                            <input type="text" name="name"/>
+                        </div>
+                        <div class="input">
+                            <label>Código</label>
+                            <input type="text" name="phone"/>
+                        </div>
+                        <div class="input">
+                            <label>Email</label>
+                            <input type="text" name="_replyto"/>
+                        </div>
+                        </div>
+                        <div class="bottom-wrapper">
+                        <div class="input">
+                            <label>Asunto</label>
+                            <input type="text" name="_subject"/>
+                        </div>
+                        <div class="input">
+                            <label>Mensaje</label>
+                            <textarea rows="5" name="message"></textarea>
+                        </div>
+                        <div class="submit">
+                            <div class="submit-card" on-click="toggle('flipCard')">ENVIAR</div>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <div class="front paper"></div>
+                </div>
+            </div>
+        </script>
+        </div>
     </main>
 </body>
+<script src='https://cdn.jsdelivr.net/npm/ractive@0.9'></script><script  src="./script.js"></script>
 </html>
