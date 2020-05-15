@@ -12,10 +12,13 @@
   </head>
   <body>
       <style>
-          .row>div{
-              height: 80px;
-              color: aliceblue;
+          .container:nth-of-type(1) .row>div{
               background: #01B795;
+          }
+          .row>div{
+            height: 80px;
+              color: aliceblue;
+              background: orange;
               border: 1px solid #fff;
           }
       </style>
@@ -50,6 +53,26 @@
         </div>
         <div class="row">
             <div class="col"></div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col">Fila 1/Col 1</div>
+            <div class="col">Fila 1/Col 2</div>
+            <div class="col">Fila 1/Col 3</div>
+            <div class="col">Fila 1/Col 4</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md">Fila 2/Col 1</div>
+            <div class="col-6 col-md">Fila 2/Col 2</div>
+            <div class="col-6 col-md">Fila 2/Col 3</div>
+            <div class="col-6 col-md">Fila 2/Col 4</div>
+            <div class="col-6 col-md">Fila 2/Col 5</div>
+            <div class="col-6 col-md">Fila 2/Col 6</div>
+            <div class="col-6 col-md">Fila 2/Col 7</div>
+            <div class="col-6 col-md">Fila 2/Col 8</div>
+            <div class="col-6 col-md">Fila 2/Col 9</div>
+            <div class="col-6 col-md">Fila 2/Col 10</div>
         </div>
     </div>
     <!-- Optional JavaScript -->
