@@ -5,27 +5,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" type="text/css" href="CSS/main2.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Hello, world!</title>
   </head>
   <body>
-      <style>
-          .container:nth-of-type(1) .row>div{
-              background: #01B795;
-          }
-          .container:nth-of-type(2) .row>div{
-            background: orange;
-          }
-          .row>div{
-              height: 70px;
-              color: aliceblue;
-              background: #c51f1f;
-              border: 1px solid #fff;
-          }
-      </style>
-    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="https://static.platzi.com/static/images/footer/logo.png">Conf Hawaii</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">La conferencia <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conviertete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+      </header>
+    <div id="container1" class="container">
         <h2>Reto 1</h2>
         <div class="row">
             <div class="col-4"></div>
@@ -59,7 +75,7 @@
             <div class="col"></div>
         </div>
     </div>
-    <div class="container" style="margin-top: 30px;">
+    <div id="container2" class="container">
         <h2>Reto 2</h2>
         <div class="row">
             <div class="col">Fila 1/Col 1</div>
@@ -80,7 +96,7 @@
             <div class="col-6 col-md">Fila 2/Col 10</div>
         </div>
     </div>
-    <div class="container" style="margin-top: 30px;">
+    <div id="container3" class="container" style="margin-bottom: 30px;">
         <h2>Reto 3</h2>
         <div class="row justify-content-end">
             <div class="col-6">Fila 1/Col 1</div>
@@ -92,6 +108,19 @@
             <div class="col-3">Fila 3/col 1</div>
         </div>
     </div>
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-lg"><a href="#">FAQ</a></div>
+                <div class="col-12 col-lg"><a href="#">Contáctanos</a></div>
+                <div class="col-12 col-lg"><a href="#">Prensa</a></div>
+                <div class="col-12 col-lg"><a href="#">Conferencias</a></div>
+                <div class="col-12 col-lg"><a href="#">Términos y condiciones</a></div>
+                <div class="col-12 col-lg"><a href="#">Privacidad</a></div>
+                <div class="col-12 col-lg"><a href="#">Estudiantes</a></div>
+            </div>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

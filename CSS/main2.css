@@ -1,30 +1,45 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans Condensed', sans-serif;
+nav .container{
+    margin-top: 0;
 }
-body{
-    width: 100%;
-    display: -webkit-flex;
-    display: flexbox;
-    display: flex;
-    justify-content: space-around;
-    background-image: url(../images/markus-spiske-qjnAnF0jIGk-unsplash.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+img{
+    height: 80px;
 }
-main{
-    width: 80%;
-    background-color: white;
+.text-platzi{
+    color: #97c93e !important;
 }
-a{
-    color: orangered;
+
+.container{
+    margin-top: 30px;
+}
+#container1 .row>div{
+    background: #01B795;
+}
+#container2 .row>div{
+    background: orange;
+}
+#container3 .row>div{
+    background: #c51f1f;
+}
+.row>div{
+    height: 70px;
+    color: aliceblue;
+    border: 1px solid #fff;
+}
+
+
+footer{
+    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+}
+footer .row>div{
+    height: auto;
+    border: none;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-}
-.clic{
-    cursor: pointer;
-}
-textarea{
-    resize: none;
 }
