@@ -2,11 +2,30 @@ nav .container{
     margin-top: 0;
 }
 img{
-    width: 90px;
+    width: 80px;
 }
 .text-platzi{
     color: #97c93e !important;
 }
+
+.container{
+    margin-top: 30px;
+}
+#container1 .row>div{
+    background: #01B795;
+}
+#container2 .row>div{
+    background: orange;
+}
+#container3 .row>div{
+    background: #c51f1f;
+}
+.row>div{
+    height: 70px;
+    color: aliceblue;
+    border: 1px solid #fff;
+}
+
 
 footer{
     background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
