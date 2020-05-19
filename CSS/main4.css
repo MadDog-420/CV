@@ -1,31 +1,30 @@
 nav .container{
     margin-top: 0;
 }
-img{
-    width: 80px;
+nav img{
+    width: 90px;
 }
 .text-platzi{
     color: #97c93e !important;
 }
 
-.container{
-    margin-top: 30px;
+.carousel-inner img {
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
 }
-#container1 .row>div{
-    background: #01B795;
+#carousel {
+    position: relative;
 }
-#container2 .row>div{
-    background: orange;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
-#container3 .row>div{
-    background: #c51f1f;
-}
-.row>div{
-    height: 70px;
-    color: aliceblue;
-    border: 1px solid #fff;
-}
-
 
 footer{
     background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
